@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">-->
+<!--<link rel="icon" href="{{ url_for('static', filename='assets/Logo.png') }}" type="image/gif" sizes="13x16">-->
+<link rel="icon" href="static/assests/Logo.png" type="image/gif" sizes="13x16">
+<link rel = "stylesheet" href = "static/style.css">
+<title>Major Project</title>
+</head>
+<body>
+
+<div id="loading">
+            <div id="loading-center">
+                <h2>PREDICTION MODEL FOR PAINT PIGMENT MIXTURES</h2>
+				<div id="names">
+				<p>Arjun Ramesh</p>
+				<p>Mugesh</p>
+				<p>Sashank Satvik</p>
+				<p>Theresa Sushil</p>
+				</div>
+				<div id="roll">
+					<p>B160021CH</p>
+					<p>B170655CH</p>
+				<p>B170591CH </p>
+				<p>B170477CH</p>
+				</div>
+				<h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Project Guides:</h3>
+				<div id="guide">
+					
+					<p>Dr Lity Alen Varghese</p>
+					<p><i>(Dept. of Chemical Engineering)</i></p>
+					<br>
+					<p>Dr Jayaraj P B</p>
+					<p><i> (Dept. of Computer Science Engineering)</i></p>
+					
+				</div>
+				
+            </div>
+		<button onClick="hide(this.parentNode);">NEXT</button>
+		<p>NATIONAL INSTITUTE OF TECHNOLOGY, CALICUT</p>
+        </div>
+
+<div class="moving-zone" id="circle0">
+    <div class="popup" id="cr0">
+    </div>
+</div>
+<div class="moving-zone" id="square">
+    <div class="square_popup">
+    </div>
+</div>
+	<div class="moving-zone" id="triangle">
+    <div class="triangle_popup">
+    </div>
+</div>
+
+	<div class="moving-zone" id="circle">
+    <div class="circle_popup" id="cr1">
+    </div>
+</div>
+<div class="container" id="container">
+  <div class="form-container sign-in-container">
+    <form action="#">
+	<label for="cc1">Color 1</label>
+      <p id="color_1"><input id="cc1" type="text" placeholder="RGB" onchange="change1();"/></p>
+      <div class = "range_form"> 
+        <input id="range1" name="range1" type="range" min="0" max="255" value="0" step="1" onchange="changes1();">
+        <input id="range2" name="range2" type="range" min="0" max="255" value="0" step="1" onchange="changes1();">
+        <input id="range3" name="range3" type="range" min="0" max="255" value="0" step="1" onchange="changes1();">
+      </div><br>
+		<label for="cc2">Color 2</label>
+       <p id="color_2"><input id="cc2" type="text" placeholder="RGB" onchange="change2();"/></p>
+      <div class = "range_form">
+        <input id="range4" name="range1" type="range" min="0" max="255" value="0" step="1" onchange="changes2();">
+        <input id="range5" name="range2" type="range" min="0" max="255" value="0" step="1" onchange="changes2();">
+        <input id="range6" name="range3" type="range" min="0" max="255" value="0" step="1" onchange="changes2();">
+      </div>
+      <br>
+      <button>BLEND</button>
+    </form>
+  </div>
+	<div class="in_between" id="in__between">
+		<div class="container-slider_in_between">
+    <br><br><br><br><br><br><br><br><br>
+			<input type="range" min="1" max="100" value="1" id="v1" step="1">
+    <div class="val" id="final1">1%</div>
+		</div></div>
+	<div class="in_between" id="_between">
+		<div class="container-slider_in_between">
+			
+    <br><br><br><br><br><br><br>
+		<input type="range" min="1" max="100" step="1" value="1" id="v2">
+    <div class="val" id="final2">1%</div>
+		</div></div>
+  <div class="overlay-container-up">
+    <div class="overlay-up">
+      <div class="overlay-panel-up overlay-right">
+        <h1 id="color_name">Hello</h1>
+      </div>
+    </div>
+  </div>
+	<div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-right">
+		  <form id="reverse">
+			  <input id="cc3" type="text" placeholder="RGB" onchange="change3();"/><br>
+		  <input id="range7" name="range7" type="range" min="0" max="255" value="0" step="1" onchange="changes3();">
+        <input id="range8" name="range8" type="range" min="0" max="255" value="0" step="1" onchange="changes3();">
+        <input id="range9" name="range9" type="range" min="0" max="255" value="0" step="1" onchange="changes3();">
+			  <button>UNMIX</button>
+		  </form>
+		  
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src = "static/main.js"></script>
+</body>
+</html>
